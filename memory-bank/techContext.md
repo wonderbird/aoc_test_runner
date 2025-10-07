@@ -62,6 +62,20 @@
 - **AI suggests**: Commands to run, code to write, concepts to explain
 - **Collaborative**: Review results together, discuss next steps
 
+### Proven Development Workflow
+1. **Project Setup**: `dart create --template=package .` with `--force` flag
+2. **Template Cleanup**: Remove generated files, restore custom README/.gitignore
+3. **Dependency Management**: Add yaml dependency, run `dart pub get`
+4. **TDD Cycle**: Write failing test → implement minimal code → fix errors → commit
+5. **Learning Integration**: Explain concepts when questions arise
+
+### Key Technical Decisions Made
+- **YAML Parsing**: Use `yaml: ^3.1.3` for test case header parsing
+- **Type Handling**: Use `.toString()` for YAML int to String conversion
+- **Factory Constructor**: Use for complex TestCase creation from YAML
+- **Named Parameters**: Use for clear, self-documenting API
+- **Test Structure**: Separate test files for each major component
+
 ## Technical Decisions
 
 ### Why Dart?

@@ -76,3 +76,10 @@ Solution Function (User Implementation)
 - **Navigator (AI)**: Explains what to do, why, and guides through TDD cycles
 - **Learning Focus**: Explains Dart concepts as encountered
 - **Pair Programming**: Collaborative development with clear roles
+
+### Effective Session Patterns
+- **One Step Focus**: Present only the immediate next step to maintain focus
+- **Question Encouragement**: Welcome questions about code and concepts
+- **Error as Learning**: Use test failures and errors as teaching moments
+- **Progress Validation**: Regular test runs to confirm working state
+- **Concept Explanation**: Provide detailed explanations with language comparisons (C# to Dart)
