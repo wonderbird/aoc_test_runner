@@ -62,3 +62,17 @@ Solution Function (User Implementation)
 - **Fast Execution**: Tests must run quickly for competitive programming context
 - **Clear Feedback**: Test results must be immediately actionable
 - **Easy Setup**: New test cases require minimal configuration
+
+## Development Patterns
+
+### TDD Approach
+- **Red-Green-Refactor**: Write failing test, implement minimal code, refactor
+- **Test-First**: All functionality must have tests written first
+- **Incremental**: Small, working increments with frequent commits
+- **Self-Testing**: The test runner itself must be thoroughly tested
+
+### Mob Programming
+- **Stefan (Typist)**: Creates all code and executes commands
+- **Navigator (AI)**: Explains what to do, why, and guides through TDD cycles
+- **Learning Focus**: Explains Dart concepts as encountered
+- **Pair Programming**: Collaborative development with clear roles

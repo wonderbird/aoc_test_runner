@@ -43,10 +43,24 @@
 3. Run `dart test` to execute tests
 4. Iterate based on test results
 
+### TDD Workflow for Test Runner
+1. Write failing test for test runner functionality
+2. Implement minimal code to pass test
+3. Refactor while keeping tests green
+4. Commit working increment
+5. Repeat for next feature
+
 ### File Organization
 - **Test Cases**: Individual files in test_cases/ directory
 - **Test Driver**: Single Dart test file per puzzle
 - **Examples**: Reference implementations in examples/ folder
+- **Library Code**: `lib/aoc_test_runner.dart` and `lib/src/` modules
+- **Test Runner Tests**: `test/` directory for testing the test runner itself
+
+### Mob Programming Commands
+- **Stefan executes**: All `dart` commands, file creation, git operations
+- **AI suggests**: Commands to run, code to write, concepts to explain
+- **Collaborative**: Review results together, discuss next steps
 
 ## Technical Decisions
 
