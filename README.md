@@ -69,4 +69,6 @@ Have fun!
 
 Note that the approach implemented in this project is similar to [Approval Testing](https://approvaltests.com) and to the way the [cloc](https://github.com/AlDanial/cloc) authors test their code.
 
-Thanks for the inspiration, @AlDanial, @EmilyBache, @isidore ❤️.
+Thanks for the inspiration, [@AlDanial](https://github.com/aldanial), [@EmilyBache](https://github.com/emilybache), [@isidore](https://github.com/isidore) ❤️.
+
+Thanks to Eric Wastl for making [Advent of Code](https://adventofcode.com) ❤️.
