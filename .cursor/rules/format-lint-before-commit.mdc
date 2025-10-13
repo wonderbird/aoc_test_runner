@@ -1,0 +1,12 @@
+---
+description: Format and Lint before Commit
+alwaysApply: false
+---
+When the user instructs you to commit changes to git, you MUST first
+
+- format code and run the linter by running `dart format .` and checking its output
+- execute all tests by running `dart test` and checking its output
+
+You MUST report errors back to the user instead of committing.
+
+You MAY only commit, if all commands above succeed.
