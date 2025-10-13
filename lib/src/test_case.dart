@@ -17,10 +17,7 @@ class TestCase {
     );
   }
 
-  factory TestCase.fromFile(String filePath) {
-    final file = File(filePath);
-    final content = file.readAsStringSync();
-
+  factory TestCase.fromString(String content) {
     final parts = content.split('---\n');
     final yamlHeader = parts[1].trim();
     final input = parts[2];
@@ -32,5 +29,11 @@ class TestCase {
       expected: yaml['expected'].toString(),
       input: input,
     );
+  }
+
+  factory TestCase.fromFile(String filePath) {
+    final file = File(filePath);
+    final content = file.readAsStringSync();
+    return TestCase.fromString(content);
   }
 }
