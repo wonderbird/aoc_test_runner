@@ -2,7 +2,7 @@
 
 ## Current Focus
 
-Successfully completed TDD Phase 2: test case file loading and input extraction. Ready to proceed with TDD Phase 3: test execution and output comparison. Using mob programming approach where Stefan is the typist and I am the navigator.
+Implementing the core test runner logic in `aocTestRunner`. We have a passing test with an empty function and are ready to add the implementation logic to parse the test case and compare the result.
 
 ## Recent Insights
 
@@ -12,6 +12,8 @@ Successfully completed TDD Phase 2: test case file loading and input extraction.
 - **Competitive Context**: Tool must feel like competitive advantage, not overhead
 - **Personal Project**: Focused on personal growth and learning, not market expansion
 - **Collaboration Mode**: Stefan learns Dart hands-on while I provide guidance
+- **API Design**: Simplicity for the end-user (passing a raw string) is preferable to architectural purity (requiring a pre-parsed object), as it minimizes friction.
+- **Naming Clarity**: Using descriptive names like `usersFunctionUnderTest` is crucial for a self-documenting API, even if they are longer.
 
 ### User Psychology
 - Developers view testing as "waste of time" in competitive scenarios
@@ -21,19 +23,24 @@ Successfully completed TDD Phase 2: test case file loading and input extraction.
 
 ## Next Steps
 
-1. **Refactoring**: Extract parsing logic to `fromString` method for better test isolation
-2. **TDD Phase 3**: Implement test execution and output comparison
-3. **Error Handling**: Add clear error messages for failed tests
-4. **FizzBuzz Example**: Create complete working example
+1.  **Implement Runner Logic**: Parse the `testCaseContent` string inside the runner.
+2.  **Execute Solver**: Call the `usersFunctionUnderTest` with the parsed input.
+3.  **Compare Results**: Assert that the actual result matches the expected result.
+4.  **Error Handling**: Add clear error messages for failed tests.
 
 ## Recent Success
 
-### Completed TDD Cycle 1: TestCase Class
-- ✅ Created failing test for YAML parsing
-- ✅ Implemented minimal TestCase class with factory constructor
-- ✅ Fixed type casting issue (YAML int to String conversion)
-- ✅ All tests passing with clean, working implementation
-- ✅ Committed working increment
+### Completed Refactoring: TestCase Parsing
+- ✅ Extracted parsing logic to `TestCase.fromString` for better isolation.
+- ✅ Updated file-based tests to use in-memory strings, removing file system dependency.
+- ✅ Confirmed all tests pass after refactoring.
+
+### Completed TDD Cycle 1: aocTestRunner Skeleton
+- ✅ Created a failing test for the `aocTestRunner` function.
+- ✅ Implemented the minimal empty function to get the test to pass.
+- ✅ Established the API signature for the runner.
+- ✅ All tests passing with the skeleton implementation.
+- ✅ Committed working increment.
 
 ### Completed TDD Cycle 2: File Loading
 - ✅ Added `input` field to TestCase class

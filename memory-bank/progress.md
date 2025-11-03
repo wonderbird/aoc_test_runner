@@ -24,7 +24,6 @@
 - **Test Runner Implementation**: Core Dart test runner functionality
 - **Test Execution**: Run tests and compare actual vs expected output
 - **Error Handling**: Clear error messages for failed tests
-- **Refactoring**: Extract parsing logic to `fromString` method for better test isolation
 
 ### Developer Experience
 - **Clear Examples**: More comprehensive example implementations
@@ -34,7 +33,7 @@
 
 ## Current Status
 
-### Phase: TDD Implementation - Phase 2 Complete
+### Phase: TDD Implementation - Phase 3 In Progress
 - **Memory Bank**: Established comprehensive project context
 - **User Research**: Identified target users and pain points
 - **Value Proposition**: Clear understanding of competitive advantages
@@ -42,6 +41,11 @@
 - **Collaboration Mode**: Mob programming approach established and working effectively
 - **TDD Foundation**: Two complete cycles with robust TestCase implementation
 - **File Loading**: Complete file parsing with AOC input fidelity
+
+### Completed Milestone: TestCase Refactoring
+- **Isolation**: ✅ Extracted parsing logic to `TestCase.fromString`.
+- **In-Memory Tests**: ✅ Migrated file-based tests to be independent of the file system.
+- **Clean State**: ✅ All tests passing after refactoring.
 
 ### Completed Milestone: TestCase Implementation
 - **Dart Project Structure**: ✅ Complete with proper dependencies
@@ -59,7 +63,6 @@
 
 ### Next Milestone: Test Execution Implementation
 - **TDD Phase 3**: Implement test execution and output comparison
-- **Refactoring**: Extract parsing logic to `fromString` method
 - **Error Handling**: Add clear error messages for failed tests
 - **Integration**: Create complete FizzBuzz example
 
@@ -67,7 +70,6 @@
 
 ### Current Limitations
 - **Test Execution**: Core test runner functionality needs development
-- **Refactoring Needed**: Parsing logic should be extracted to `fromString` method
 - **Limited Examples**: Only FizzBuzz example available
 - **Documentation Gaps**: Missing API reference and advanced patterns
 
