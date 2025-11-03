@@ -20,7 +20,10 @@ class TestCase {
   factory TestCase.fromFile(String filePath) {
     final file = File(filePath);
     final content = file.readAsStringSync();
+    return TestCase.fromString(content);
+  }
 
+  factory TestCase.fromString(String content) {
     final parts = content.split('---\n');
     final yamlHeader = parts[1].trim();
     final input = parts[2];

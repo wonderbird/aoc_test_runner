@@ -1,0 +1,11 @@
+---
+description: Well known refactorings
+alwaysApply: true
+---
+I am familiar with the following refactorings:
+
+- Extract Method
+
+Whenever you want me to restructure the code by using one of the refactorings above, you can only name the refactoring and the target.
+
+For all other refactorings, please name the refactoring and then walk me through the refactoring step by step.
