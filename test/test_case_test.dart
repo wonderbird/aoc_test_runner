@@ -24,7 +24,7 @@ void main() {
 
     test('should preserve exact input formatting including whitespace', () {
       final testFile = File('test/test_cases/whitespace_test.yaml');
-      testFile.writeAsStringSync('''---
+      final content = '''---
 title: Whitespace Test
 expected: 42
 ---
@@ -32,13 +32,10 @@ expected: 42
 middle line
   
   trailing space
-''');
-
-      final testCase = TestCase.fromFile('test/test_cases/whitespace_test.yaml');
+''';
+      final testCase = TestCase.fromString(content);
 
       expect(testCase.input, equals('  leading whitespace\nmiddle line\n  \n  trailing space\n'));
-
-      testFile.deleteSync();
     });
   });
 }
