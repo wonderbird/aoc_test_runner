@@ -14,5 +14,20 @@ any input
 
       aocTestRunner(usersFunctionUnderTest, testCaseContent);
     });
+
+    test('should fail if users function under test returns wrong result', () {
+      final usersFunctionUnderTest = (String input) => 'Wrong';
+      const testCaseContent = '''---
+title: 'Simple Fail'
+expected: 'Correct'
+---
+any input
+''';
+
+      expect(
+        () => aocTestRunner(usersFunctionUnderTest, testCaseContent), 
+        throwsA(isA<TestFailure>()),
+      );
+    });
   });
 }

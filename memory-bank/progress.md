@@ -5,6 +5,7 @@
 ### Current Implementation
 - **Basic Structure**: Project has README.md with clear documentation
 - **TestCase Class**: Complete with YAML parsing and file loading
+- **Test Runner**: Core logic for passing and failing tests is implemented.
 - **File Loading**: Robust file parsing with whitespace preservation
 - **Test Coverage**: Comprehensive tests for all functionality
 - **Example Implementation**: FizzBuzz example demonstrates usage pattern
@@ -21,9 +22,7 @@
 ## What's Left to Build
 
 ### Core Features
-- **Test Runner Implementation**: Core Dart test runner functionality
-- **Test Execution**: Run tests and compare actual vs expected output
-- **Error Handling**: Clear error messages for failed tests
+- **Error Handling**: Clear error messages for failed tests and malformed input.
 
 ### Developer Experience
 - **Clear Examples**: More comprehensive example implementations
@@ -33,7 +32,7 @@
 
 ## Current Status
 
-### Phase: TDD Implementation - Phase 3 In Progress
+### Phase: TDD Implementation - Phase 3 Complete
 - **Memory Bank**: Established comprehensive project context
 - **User Research**: Identified target users and pain points
 - **Value Proposition**: Clear understanding of competitive advantages
@@ -41,6 +40,11 @@
 - **Collaboration Mode**: Mob programming approach established and working effectively
 - **TDD Foundation**: Two complete cycles with robust TestCase implementation
 - **File Loading**: Complete file parsing with AOC input fidelity
+
+### Completed Milestone: Test Runner Core Logic
+- **Execution**: ✅ Runner can execute a user's function against a test case.
+- **Assertion**: ✅ Correctly passes for correct results and fails for incorrect results.
+- **Clean State**: ✅ All tests are green.
 
 ### Completed Milestone: TestCase Refactoring
 - **Isolation**: ✅ Extracted parsing logic to `TestCase.fromString`.

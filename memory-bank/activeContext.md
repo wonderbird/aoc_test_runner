@@ -2,7 +2,7 @@
 
 ## Current Focus
 
-Implementing the core test runner logic in `aocTestRunner`. We have a passing test with an empty function and are ready to add the implementation logic to parse the test case and compare the result.
+Successfully implemented the core logic for the `aocTestRunner`. It can now parse test cases, execute the user's function, and correctly assert for both passing and failing scenarios. The next logical step is to improve error handling and feedback for failing tests.
 
 ## Recent Insights
 
@@ -23,12 +23,17 @@ Implementing the core test runner logic in `aocTestRunner`. We have a passing te
 
 ## Next Steps
 
-1.  **Implement Runner Logic**: Parse the `testCaseContent` string inside the runner.
-2.  **Execute Solver**: Call the `usersFunctionUnderTest` with the parsed input.
-3.  **Compare Results**: Assert that the actual result matches the expected result.
-4.  **Error Handling**: Add clear error messages for failed tests.
+1.  **Improve Failure Messages**: Provide clear and helpful output when a test fails (e.g., showing expected vs. actual).
+2.  **Handle Malformed Input**: Add error handling for `testCaseContent` that cannot be parsed.
+3.  **Expand Test Coverage**: Add more complex test cases to ensure robustness.
 
 ## Recent Success
+
+### Completed TDD Cycle 2: Core Runner Logic
+- ✅ Created a failing test for an incorrect solution.
+- ✅ Implemented the core logic: parsing, execution, and assertion.
+- ✅ Both passing and failing tests now work as expected.
+- ✅ All tests are green.
 
 ### Completed Refactoring: TestCase Parsing
 - ✅ Extracted parsing logic to `TestCase.fromString` for better isolation.
