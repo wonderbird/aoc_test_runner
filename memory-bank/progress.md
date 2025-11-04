@@ -5,7 +5,7 @@
 ### Current Implementation
 - **Basic Structure**: Project has README.md with clear documentation
 - **TestCase Class**: Complete with YAML parsing and file loading
-- **Test Runner**: Core logic for passing and failing tests is implemented.
+- **Test Runner**: Core logic implemented with clear failure messages.
 - **File Loading**: Robust file parsing with whitespace preservation
 - **Test Coverage**: Comprehensive tests for all functionality
 - **Example Implementation**: FizzBuzz example demonstrates usage pattern
@@ -22,7 +22,7 @@
 ## What's Left to Build
 
 ### Core Features
-- **Error Handling**: Clear error messages for failed tests and malformed input.
+- **Error Handling**: Robust handling for malformed test case input.
 
 ### Developer Experience
 - **Clear Examples**: More comprehensive example implementations
@@ -32,7 +32,7 @@
 
 ## Current Status
 
-### Phase: TDD Implementation - Phase 3 Complete
+### Phase: TDD Implementation - Phase 4 In Progress
 - **Memory Bank**: Established comprehensive project context
 - **User Research**: Identified target users and pain points
 - **Value Proposition**: Clear understanding of competitive advantages
@@ -40,6 +40,11 @@
 - **Collaboration Mode**: Mob programming approach established and working effectively
 - **TDD Foundation**: Two complete cycles with robust TestCase implementation
 - **File Loading**: Complete file parsing with AOC input fidelity
+
+### Completed Milestone: Clear Failure Messages
+- **Custom Reason**: ✅ Implemented `reason` in `expect` to show the test case title on failure.
+- **Improved Feedback**: ✅ Users now see which test case failed.
+- **Clean State**: ✅ All tests are green.
 
 ### Completed Milestone: Test Runner Core Logic
 - **Execution**: ✅ Runner can execute a user's function against a test case.

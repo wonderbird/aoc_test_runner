@@ -2,7 +2,7 @@
 
 ## Current Focus
 
-Successfully implemented the core logic for the `aocTestRunner`. It can now parse test cases, execute the user's function, and correctly assert for both passing and failing scenarios. The next logical step is to improve error handling and feedback for failing tests.
+Core logic is implemented and provides clear failure messages. The next step is to make the runner more robust by handling potential parsing errors in the `testCaseContent`.
 
 ## Recent Insights
 
@@ -23,11 +23,16 @@ Successfully implemented the core logic for the `aocTestRunner`. It can now pars
 
 ## Next Steps
 
-1.  **Improve Failure Messages**: Provide clear and helpful output when a test fails (e.g., showing expected vs. actual).
-2.  **Handle Malformed Input**: Add error handling for `testCaseContent` that cannot be parsed.
-3.  **Expand Test Coverage**: Add more complex test cases to ensure robustness.
+1.  **Handle Malformed Input**: Add error handling for `testCaseContent` that cannot be parsed.
+2.  **Expand Test Coverage**: Add more complex test cases to ensure robustness.
+3.  **Improve Failure Messages**: Add actual vs. expected values to the failure reason for even better feedback.
 
 ## Recent Success
+
+### Completed TDD Cycle 3: Clear Failure Messages
+- ✅ Created a failing test to enforce the test case title in the failure message.
+- ✅ Used the `reason` parameter in `expect` to provide a custom failure message.
+- ✅ All tests are green with improved error feedback.
 
 ### Completed TDD Cycle 2: Core Runner Logic
 - ✅ Created a failing test for an incorrect solution.
