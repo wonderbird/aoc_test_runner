@@ -2,7 +2,7 @@
 
 ## Current Focus
 
-Core logic is implemented and provides clear failure messages. The next step is to make the runner more robust by handling potential parsing errors in the `testCaseContent`.
+Core logic is implemented with robust error handling for malformed input. The next step is to expand test coverage with more complex test cases and improve failure messages to show actual vs expected values.
 
 ## Recent Insights
 
@@ -23,11 +23,16 @@ Core logic is implemented and provides clear failure messages. The next step is 
 
 ## Next Steps
 
-1.  **Handle Malformed Input**: Add error handling for `testCaseContent` that cannot be parsed.
-2.  **Expand Test Coverage**: Add more complex test cases to ensure robustness.
-3.  **Improve Failure Messages**: Add actual vs. expected values to the failure reason for even better feedback.
+1.  **Expand Test Coverage**: Add more complex test cases to ensure robustness.
+2.  **Improve Failure Messages**: Add actual vs. expected values to the failure reason for even better feedback.
 
 ## Recent Success
+
+### Completed TDD Cycle 4: Error Handling for Malformed Input
+- ✅ Created a failing test for malformed test case input.
+- ✅ Added FormatException validation in `TestCase.fromString` to check format before parsing.
+- ✅ All tests are green with robust error handling.
+- ✅ Test runner now provides clear error messages for invalid input format.
 
 ### Completed TDD Cycle 3: Clear Failure Messages
 - ✅ Created a failing test to enforce the test case title in the failure message.

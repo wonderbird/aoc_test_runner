@@ -25,6 +25,11 @@ class TestCase {
 
   factory TestCase.fromString(String content) {
     final parts = content.split('---\n');
+    
+    if (parts.length != 3) {
+      throw FormatException('Invalid test case format: expected YAML header and input separated by ---');
+    }
+
     final yamlHeader = parts[1].trim();
     final input = parts[2];
 

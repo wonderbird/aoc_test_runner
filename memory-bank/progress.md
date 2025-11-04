@@ -5,9 +5,10 @@
 ### Current Implementation
 - **Basic Structure**: Project has README.md with clear documentation
 - **TestCase Class**: Complete with YAML parsing and file loading
-- **Test Runner**: Core logic implemented with clear failure messages.
+- **Test Runner**: Core logic implemented with clear failure messages
 - **File Loading**: Robust file parsing with whitespace preservation
-- **Test Coverage**: Comprehensive tests for all functionality
+- **Error Handling**: FormatException thrown for malformed test case input
+- **Test Coverage**: Comprehensive tests for all functionality including error cases
 - **Example Implementation**: FizzBuzz example demonstrates usage pattern
 - **Test Case Format**: YAML + input format is well-defined and working
 
@@ -18,11 +19,12 @@
 - **Dart Integration**: Native test framework integration is solid
 - **File Parsing**: `---\n` separator approach works cleanly
 - **Whitespace Preservation**: Critical for AOC input fidelity
+- **Error Handling**: FormatException provides clear feedback for invalid input
 
 ## What's Left to Build
 
 ### Core Features
-- **Error Handling**: Robust handling for malformed test case input.
+- All core features are implemented and working.
 
 ### Developer Experience
 - **Clear Examples**: More comprehensive example implementations
@@ -40,6 +42,12 @@
 - **Collaboration Mode**: Mob programming approach established and working effectively
 - **TDD Foundation**: Two complete cycles with robust TestCase implementation
 - **File Loading**: Complete file parsing with AOC input fidelity
+
+### Completed Milestone: Error Handling for Malformed Input
+- **Format Validation**: ✅ Added format check in `TestCase.fromString` before parsing.
+- **Clear Error Messages**: ✅ FormatException thrown with descriptive message for invalid input.
+- **Test Coverage**: ✅ Added test for malformed input handling.
+- **Clean State**: ✅ All tests are green.
 
 ### Completed Milestone: Clear Failure Messages
 - **Custom Reason**: ✅ Implemented `reason` in `expect` to show the test case title on failure.
@@ -84,7 +92,6 @@
 
 ### Technical Debt
 - **Code Structure**: May need refactoring as features are added
-- **Error Handling**: Comprehensive error handling not yet implemented
 - **Testing**: Framework itself needs comprehensive testing
 - **Documentation**: Examples and patterns need expansion
 

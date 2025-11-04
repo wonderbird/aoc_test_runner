@@ -37,5 +37,11 @@ middle line
 
       expect(testCase.input, equals('  leading whitespace\nmiddle line\n  \n  trailing space\n'));
     });
+
+    test('should throw FormatException when content is malformed', () {
+      const content = 'not a valid test case format';
+
+      expect(() => TestCase.fromString(content), throwsA(isA<FormatException>()));
+    });
   });
 }
