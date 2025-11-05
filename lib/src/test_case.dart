@@ -8,15 +8,6 @@ class TestCase {
 
   TestCase({required this.title, required this.expected, required this.input});
 
-  factory TestCase.fromYaml(String yamlString) {
-    final yaml = loadYaml(yamlString);
-    return TestCase(
-      title: yaml['title'] as String,
-      expected: yaml['expected'].toString(),
-      input: '',
-    );
-  }
-
   factory TestCase.fromFile(String filePath) {
     final file = File(filePath);
     final content = file.readAsStringSync();
@@ -25,9 +16,11 @@ class TestCase {
 
   factory TestCase.fromString(String content) {
     final parts = content.split('---\n');
-    
+
     if (parts.length != 3) {
-      throw FormatException('Invalid test case format: expected YAML header and input separated by ---');
+      throw FormatException(
+        'Invalid test case format: expected YAML header and input separated by ---',
+      );
     }
 
     final yamlHeader = parts[1].trim();
