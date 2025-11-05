@@ -2,7 +2,7 @@
 
 ## Current Focus
 
-Core logic is implemented with robust error handling for malformed input. The next step is to expand test coverage with more complex test cases and improve failure messages to show actual vs expected values.
+Core logic is implemented with robust error handling for malformed input. Failure messages now verify that expected and actual values are displayed. The next step is to expand test coverage with more complex test cases.
 
 ## Recent Insights
 
@@ -24,9 +24,14 @@ Core logic is implemented with robust error handling for malformed input. The ne
 ## Next Steps
 
 1.  **Expand Test Coverage**: Add more complex test cases to ensure robustness.
-2.  **Improve Failure Messages**: Add actual vs. expected values to the failure reason for even better feedback.
 
 ## Recent Success
+
+### Completed TDD Cycle 5: Failure Messages with Expected/Actual Values
+- ✅ Added test to verify that failure messages include expected and actual values.
+- ✅ Discovered that Dart test framework automatically includes these values in failure messages.
+- ✅ Test documents and verifies this behavior for future regression protection.
+- ✅ All tests are green.
 
 ### Completed TDD Cycle 4: Error Handling for Malformed Input
 - ✅ Created a failing test for malformed test case input.

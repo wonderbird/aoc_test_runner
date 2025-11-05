@@ -20,6 +20,7 @@
 - **File Parsing**: `---\n` separator approach works cleanly
 - **Whitespace Preservation**: Critical for AOC input fidelity
 - **Error Handling**: FormatException provides clear feedback for invalid input
+- **Failure Messages**: Test verification that expected and actual values are displayed in failure messages
 
 ## What's Left to Build
 
@@ -52,6 +53,7 @@
 ### Completed Milestone: Clear Failure Messages
 - **Custom Reason**: ✅ Implemented `reason` in `expect` to show the test case title on failure.
 - **Improved Feedback**: ✅ Users now see which test case failed.
+- **Expected/Actual Values**: ✅ Added test verifying that failure messages include expected and actual values (automatically provided by Dart test framework).
 - **Clean State**: ✅ All tests are green.
 
 ### Completed Milestone: Test Runner Core Logic

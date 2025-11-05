@@ -53,5 +53,26 @@ any input
         ),
       );
     });
+
+    test('failure message should include expected and actual result', () {
+      String usersFunctionUnderTest(String input) => 'Wrong';
+      const testCaseContent = '''---
+title: 'Title in Error'
+expected: 'Correct'
+---
+any input
+''';
+
+      expect(
+        () => aocTestRunner(usersFunctionUnderTest, testCaseContent),
+        throwsA(
+          isA<TestFailure>().having(
+            (e) => e.message,
+            'message',
+            contains("Expected: 'Correct'\n  Actual: 'Wrong'"),
+          ),
+        ),
+      );
+    });
   });
 }
